@@ -1,0 +1,326 @@
+.corpo{
+    background: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    width: 450px;
+}
+
+.caixa p{
+    width: 350px;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.logo{  
+    width: 360px;
+    margin-top:80px;
+    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.options-menu{
+    margin-top: 30px;
+}
+
+.options{
+    display: flex;
+}
+
+.options .mais-ideias{
+    margin-top: 5px;
+}
+
+.mais-ideias a{
+    font-weight: bold;
+    color:lightcoral;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.options a {
+    width: 100%;
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.options .mais-ideias{
+    color:lightcoral;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.options-menu div p{
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+
+}
+
+.ver-ideias{
+    width: 150px;
+    padding: 15px;
+    background: lightcoral;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all;
+    box-shadow:1px 1px 3px black;
+}
+
+.mais-ideias:hover{
+    text-decoration: underline;
+}
+
+.ver-ideias:hover{
+    background: rgb(255, 0, 106);
+    transform: scale(1.1);
+}
+
+.options-menu p{
+    transition: 0.3s all;
+}
+.options-menu p:hover{
+    transform: scale(1.1);
+}
+
+.caixa p strong{
+    font-weight: bold;
+}
+
+.conteudo{
+    margin-top: 70px;
+    width: 800px;
+    flex-flow: column;
+    
+}
+
+.container{
+    height: 900px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.ideia{
+    width: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    box-shadow:2px 2px 5px black;
+    transition: 0.3s all;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 18px;
+    
+}
+
+.ideia:hover{
+    transform: scale(1.02);
+}
+
+.img-ideia{
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.infos{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+h1{
+    padding: 10px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+h2{
+    padding: 10px;
+    font-size: 20px;
+    color: #a7a7a7;
+    font-family: 'Righteous', cursive;
+}
+
+.infos p{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.infos a{
+    text-decoration: none;
+}
+
+.infos a:hover{
+    text-decoration: underline;
+    color: lightcoral;
+}
+
+.infos a p{
+    color: lightcoral;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;  
+    color: rgb(255, 0, 106);  
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background:rgba(255, 0, 106, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.modal{
+    width: 30%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid 255, 0, 106;
+    position: relative;
+    display: flex;
+}
+
+.conteudo-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+
+.subtitulo{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+
+}
+
+.input-sequenciado{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.link-img-modal{
+    padding: 10px;
+}
+
+.descricao-modal{
+    padding: 10px;
+}
+
+.link-ideia-modal{
+    padding: 10px;
+}
+
+.botoes-modal{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-modal .input{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border:rgb(255, 0, 106);
+    border-radius: 10px;
+}
+
+.botoes-modal button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: rgb(255, 0, 64);
+    font-size: 30px;
+    box-shadow:1px 1px 2px black;
+    transition: 0.3s all;
+}
+
+.botoes-modal .button-modal-voltar{
+    background: rgb(250, 17, 87);
+    color: white;
+}
+
+.botoes-modal .button-modal-voltar:hover{
+    transform: scale(1.1);
+}
+
+.botoes-modal .button-modal-salvar{
+    color: tomato;
+    background: white;
+}
+
+.botoes-modal .button-modal-salvar:hover{
+    transform: scale(1.1);
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-container.mostrar .modal{
+    animation: modal .3s;
+}
+
+

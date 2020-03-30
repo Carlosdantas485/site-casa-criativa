@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Casa Criativa</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="ideias.css">
+		<link rel="icon" href="./imagens/lupa.jpg">
+		<link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="corpo">
+		<header class="cabesalho">
+		
+			<img class="logo" src="./imagens/logo-casa.png" alt="logo">
+			
+			<div class="caixa">
+			
+				<p>Em casa em periodos longos, não dese ser nada facil. </p>
+				<p>Iremos catalogar ideias, <strong>Brincadeiras, Jogos, Filmes, Livros, Cursos, Dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.</p>
+				<p>Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionando a sua ideia.</p>
+				
+				<div class="options-menu">
+					<nav class="options">
+						<p class="mais-ideias" >+ Mais Ideias</p>
+						<a href="pag2.html"><input class="ver-ideias" type="submit" value="Ver ideias"></a>
+					</nav>
+					<div>
+						<p>Com 💓 Carlos Dantas</p>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<main class="conteudo">
+
+			<div class="container">
+				<section class="ideia">
+					
+					<img class="img-ideia" src="https://image.flaticon.com/icons/svg/2729/2729007.svg " alt="">
+					
+					<div class="infos">
+						<h1>Curso de programação</h1>
+						<h2>Estudo</h2>
+						<p>Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele. As pessoas não conseguem vencer e dizem que você também não vai vencer. Se você quer uma coisa corre atrás.</p>
+						<a href="pag2.html"><p>Ir para ideias</p></a>
+					</div>
+
+				</section>
+
+				<section class="ideia">
+					
+					<img class="img-ideia" src="https://image.flaticon.com/icons/svg/2729/2729005.svg " alt="">
+					
+					<div class="infos">
+						<h1>Exercicios</h1>
+						<h2>Saúde</h2>
+						<p>Faça o que for necessário para ser feliz. Mas não se esqueça que a felicidade é um sentimento simples, você pode encontrá-la e deixá-la ir embora por não perceber sua simplicidade.</p>
+						<a href="pag2.html"><p>Ir para ideias</p></a>
+					</div>	
+
+				</section>
+
+				<section class="ideia">
+					
+					<img class="img-ideia" src="https://image.flaticon.com/icons/svg/2729/2729027.svg " alt="">
+					<div class="infos">
+						<h1>Meditação</h1>
+						<h2>Metalidade</h2>
+						<p>Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele. As pessoas não conseguem vencer e dizem que você também não vai vencer. Se você quer uma coisa corre atrás.</p>
+						<a href="pag2.html"><p>Ir para ideias</p></a>
+					</div>
+
+				</section>	
+			</div>
+		</main>
+		
+		<div id="idmodal" class="modal-container">
+			
+			<div class="modal">
+				<div class="conteudo-modal">
+					<form>
+						<h3 class="subtitulo">Nova ideia</h3>
+						<div class="input-sequenciado">
+							<div class="titulo-ideia-modal">
+								<p>Titulo da ideia</p>
+								<input type="text " class="input" placeholder="Titulo">
+							</div>
+							<div class="categoria-modal">
+								<p>Catgoria</p>
+								<input type="text " class="input" placeholder="Categoria">
+							</div>
+							
+						</div>
+
+						<div class="link-img-modal">
+							<p>Link da imagem</p>
+							<input type="text " class="input" placeholder="Link da imagem">
+						</div>
+						
+						<div class="descricao-modal">
+							<p>Descrição da ideia</p>
+							<textarea cols="60" rows="10" id="Mensagem" placeholder="Digite aqui sua ideia" class="input"></textarea>	
+						</div>
+						
+						<div class="link-ideia-modal">
+							<p>Link da ideia</p>
+							<input type="text" class="input" placeholder="Link da ideia">							
+						</div>
+
+						<div class="botoes-modal">												
+							<a href="ideia.html"><button class="button-modal-voltar">Voltar</button></a>
+							<a href="ideia.html"><button class="button-modal-salvar">Salvar</button></a>
+						</div>
+					</form>
+				</div>              
+            </div>
+		</div>
+
+		<script>
+			function iniciaModal(modalID){
+				const modal = document.getElementById(modalID);
+
+				if(modal){
+
+					modal.classList.add('mostrar');
+					modal.addEventListener('click', (e) => {
+
+						if (e.target.id == modalID || e.target.className == 'fechar'){
+							modal.classList.remove('mostrar');
+							localStorage.fecha-modal == modalID;
+						}
+					});
+					
+				}
+			}
+			const ideia =  document.querySelector('.mais-ideias');
+			ideia.addEventListener('click', () => iniciaModal("idmodal"));
+		</script>
+		
+	</body>
+   
+</html>
